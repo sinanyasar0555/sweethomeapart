@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sweet Home Apart Otel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sweet Home Apart Otel</h1>
+        </div>
+        <button class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#anasayfa">Ana Sayfa</a></li>
+                <li><a href="#odalar">Odalar</a></li>
+                <li><a href="#hizmetler">Hizmetler</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="anasayfa" class="hero">
+        <div class="hero-content">
+            <h2>Sweet Home Apart Otel</h2>
+            <p>Konfor ve huzurun buluştuğu adres</p>
+            <p class="hero-phone">
+                <i class="fas fa-phone"></i> 
+                <a href="tel:+905442898257">0544 289 82 57</a>
+            </p>
+            <div class="hero-buttons">
+                <a href="#odalar" class="btn">Odaları Keşfedin</a>
+                <a href="tel:+905442898257" class="btn btn-phone">Hemen Ara</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="odalar" class="rooms-section">
+        <div class="container">
+            <h2 class="section-title">Odalarımız</h2>
+            <p class="section-description">Konfor ve lüksün buluştuğu özel tasarım odalarımız</p>
+            
+            <div class="rooms-container">
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="images/room5.jpg" alt="14 Numaralı Daire">
+                    </div>
+                    <div class="room-details">
+                        <h3>14 Numaralı Daire</h3>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> Double Yatak</li>
+                            <li><i class="fas fa-couch"></i> Oturma Alanı</li>
+                            <li><i class="fas fa-wifi"></i> Ücretsiz Wi-Fi</li>
+                            <li><i class="fas fa-tv"></i> Smart TV</li>
+                            <li><i class="fas fa-utensils"></i> Tam Donanımlı Mini Mutfak</li>
+                            <li><i class="fas fa-bath"></i> Banyo</li>
+                            <li><i class="fas fa-ruler-combined"></i> 65m²</li>
+                        </ul>
+                        <div class="room-buttons">
+                            <a href="#" class="btn btn-details" onclick="openRoomDetails('standart')">Detaylar</a>
+                            <a href="https://wa.me/905442898257" class="btn btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Rezervasyon
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="images/room9.jpg" alt="13 Numaralı Daire">
+                    </div>
+                    <div class="room-details">
+                        <h3>13 Numaralı Daire</h3>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> Double Yatak</li>
+                            <li><i class="fas fa-couch"></i> Oturma Alanı</li>
+                            <li><i class="fas fa-wifi"></i> Ücretsiz Wi-Fi</li>
+                            <li><i class="fas fa-tv"></i> Smart TV</li>
+                            <li><i class="fas fa-utensils"></i> Tam Donanımlı Mini Mutfak</li>
+                            <li><i class="fas fa-bath"></i> Banyo</li>
+                            <li><i class="fas fa-ruler-combined"></i> 65m²</li>
+                        </ul>
+                        <div class="room-buttons">
+                            <a href="#" class="btn btn-details" onclick="openRoomDetails('deluxe')">Detaylar</a>
+                            <a href="https://wa.me/905442898257" class="btn btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Rezervasyon
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="images/room10.jpg" alt="12 Numaralı Daire">
+                    </div>
+                    <div class="room-details">
+                        <h3>12 Numaralı Daire</h3>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> Double Yatak</li>
+                            <li><i class="fas fa-couch"></i> Oturma Alanı</li>
+                            <li><i class="fas fa-wifi"></i> Ücretsiz Wi-Fi</li>
+                            <li><i class="fas fa-tv"></i> Smart TV</li>
+                            <li><i class="fas fa-utensils"></i> Tam Donanımlı Mini Mutfak</li>
+                            <li><i class="fas fa-bath"></i> Banyo</li>
+                            <li><i class="fas fa-ruler-combined"></i> 65m²</li>
+                        </ul>
+                        <div class="room-buttons">
+                            <a href="#" class="btn btn-details" onclick="openRoomDetails('suit')">Detaylar</a>
+                            <a href="https://wa.me/905442898257" class="btn btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Rezervasyon
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="roomDetailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="roomDetailsContent"></div>
+        </div>
+    </div>
+
+    <section id="hizmetler" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Hizmetlerimiz</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Apart Daireler</h3>
+                    <p>Tam donanımlı mutfak ve konforlu yaşam alanları</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Ücretsiz Wi-Fi</h3>
+                    <p>Tüm odalarda yüksek hızlı internet erişimi</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-parking"></i>
+                    <h3>Otopark</h3>
+                    <p>Ücretsiz Açık Otopark</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-broom"></i>
+                    <h3>Temizlik Servisi</h3>
+                    <p>Düzenli oda temizlik hizmeti</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Galeri</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="images/room4.jpg" alt="Otel Görünüm 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/room5.jpg" alt="Otel Görünüm 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/room6.jpg" alt="Otel Görünüm 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/room7.jpg" alt="Otel Görünüm 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/room8.jpg" alt="Otel Görünüm 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/room1.jpg" alt="Otel Görünüm 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">İletişim</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-user"></i>
+                        <p>Sinan Yaşar</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p><a href="tel:+905442898257">0544 289 82 57</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <p><a href="https://wa.me/905442898257" target="_blank">WhatsApp İletişim</a></p>
+                    </div>
+                    <div class="social-media">
+                        <a href="tel:+905442898257"><i class="fas fa-phone-alt"></i></a>
+                        <a href="https://wa.me/905442898257" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cevre" class="attractions-section">
+        <div class="container">
+            <h2 class="section-title">Çevredeki Yerler</h2>
+            <p class="section-description">Otelimizin yakınında keşfedebileceğiniz yerler</p>
+            
+            <div class="attractions-slider" id="attractions-container">
+                <!-- Çevredeki yerler JavaScript ile eklenecek -->
+            </div>
+            
+            <div class="attraction-controls">
+                <button class="attraction-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="attraction-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="yorumlar" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Misafir Yorumları</h2>
+            <p class="section-description">Misafirlerimizin deneyimleri</p>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Harika bir konaklama deneyimi yaşadık. Odalar temiz ve konforluydu. Personel çok yardımseverdi. Kesinlikle tekrar geleceğiz."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Ayşe Y.</h4>
+                            <p>İstanbul</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"Konumu mükemmel, şehrin merkezine ve sahile çok yakın. Odalar geniş ve tam donanımlı. Ailece konaklamak için ideal."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Mehmet K.</h4>
+                            <p>Ankara</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Uzun süredir bu kadar temiz ve düzenli bir apart otelde kalmamıştım. Mutfak ekipmanları eksiksiz, yatak çok rahattı. Kesinlikle tavsiye ederim."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Zeynep A.</h4>
+                            <p>İzmir</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-controls">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sss" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Sık Sorulan Sorular</h2>
+            <p class="section-description">Misafirlerimizin en çok merak ettiği konular</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Check-in ve check-out saatleri nelerdir?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Check-in saat 12:00'den itibaren, check-out ise en geç saat 11:00'e kadardır. Erken check-in veya geç check-out için lütfen önceden iletişime geçiniz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Otopark hizmeti var mı?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, misafirlerimiz için ücretsiz açık otopark hizmeti sunmaktayız.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Evcil hayvan kabul ediyor musunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, tesisimizde evcil hayvanlarınızla birlikte konaklayabilirsiniz. Lütfen rezervasyon sırasında evcil hayvanınızın türü ve boyutu hakkında bizi bilgilendirin.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Rezervasyon iptal politikanız nedir?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Rezervasyonunuzu giriş tarihinden 48 saat öncesine kadar ücretsiz olarak iptal edebilirsiniz. Daha sonraki iptallerde bir gecelik konaklama bedeli tahsil edilir.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Tesiste kahvaltı hizmeti var mı?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Apart otelimizde kahvaltı hizmeti bulunmamaktadır. Ancak her dairede tam donanımlı mutfak mevcuttur ve yakın çevrede birçok kafe ve restoran bulunmaktadır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="konum" class="location-section">
+        <div class="container">
+            <h2 class="section-title">Konumumuz</h2>
+            <p class="section-description">Bize nasıl ulaşabilirsiniz?</p>
+            
+            <div class="location-container">
+                <div class="location-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Adres</h3>
+                            <p>Güzelyalı mahallesi 3049. sokak No: 6 Otel Sweet Home, Samsun</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Telefon</h3>
+                            <p><a href="tel:+905442898257">0544 289 82 57</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-directions"></i>
+                        <div>
+                            <h3>Ulaşım</h3>
+                            <p>Samsun Havalimanı'na 20 km, Şehir merkezine 2 km mesafedeyiz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Sweet Home Apart Otel</h2>
+                    <p>Konfor ve huzurun adresi</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Hızlı Linkler</h3>
+                    <ul>
+                        <li><a href="#anasayfa">Ana Sayfa</a></li>
+                        <li><a href="#odalar">Odalar</a></li>
+                        <li><a href="#hizmetler">Hizmetler</a></li>
+                        <li><a href="#galeri">Galeri</a></li>
+                        <li><a href="#iletisim">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Bültenimize Abone Olun</h3>
+                    <p>En güncel kampanya ve fırsatlardan haberdar olun</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="E-posta adresiniz" required>
+                        <button type="submit">Abone Ol</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sweet Home Apart Otel. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/905442898257" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html> 
