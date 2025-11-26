@@ -7,6 +7,11 @@ const roomDetails = {
         title: "14 Numaralı Daire",
         description: "65m² genişliğinde, konforlu ve tam donanımlı dairemiz sizleri bekliyor.",
         features: [
+            "Netflix",
+            "Youtube",
+            "Android TV",
+            "Asansör",
+            "Deniz Manzarası",
             "Double Yatak",
             "Oturma Alanı",
             "Ücretsiz Wi-Fi",
@@ -18,12 +23,7 @@ const roomDetails = {
             "VIP Temizlik Servisi",
             "Mini Buzdolabı",
             "Sıcak Su",
-            "Doğalgaz Kombi",
-            "Netflix",
-            "Youtube",
-            "Android TV",
-            "Asansör",
-            "Deniz Manzarası"
+            "Doğalgaz Kombi"
         ],
         images: [
             "images/room5.jpg",
@@ -34,6 +34,11 @@ const roomDetails = {
         title: "13 Numaralı Daire",
         description: "65m² genişliğinde, aile konaklamaları için ideal dairemiz huzurlu bir konaklama sunuyor.",
         features: [
+            "Netflix",
+            "Youtube",
+            "Android TV",
+            "Asansör",
+            "Deniz Manzarası",
             "Double Yatak",
             "Oturma Alanı",
             "Ücretsiz Wi-Fi",
@@ -45,12 +50,7 @@ const roomDetails = {
             "VIP Temizlik Servisi",
             "Mini Buzdolabı",
             "Sıcak Su",
-            "Doğalgaz Kombi",
-            "Netflix",
-            "Youtube",
-            "Android TV",
-            "Asansör",
-            "Deniz Manzarası"
+            "Doğalgaz Kombi"
         ],
         images: [
             "images/room9.jpg",
@@ -61,6 +61,11 @@ const roomDetails = {
         title: "12 Numaralı Daire",
         description: "65m² genişliğinde, geniş aileler için lüks ve konforlu dairemiz unutulmaz bir konaklama deneyimi sunuyor.",
         features: [
+            "Netflix",
+            "Youtube",
+            "Android TV",
+            "Asansör",
+            "Deniz Manzarası",
             "Double Yatak",
             "Oturma Alanı",
             "Ücretsiz Wi-Fi",
@@ -72,12 +77,7 @@ const roomDetails = {
             "VIP Temizlik Servisi",
             "Mini Buzdolabı",
             "Sıcak Su",
-            "Doğalgaz Kombi",
-            "Netflix",
-            "Youtube",
-            "Android TV",
-            "Asansör",
-            "Deniz Manzarası"
+            "Doğalgaz Kombi"
         ],
         images: [
             "images/room10.jpg",
