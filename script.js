@@ -18,7 +18,12 @@ const roomDetails = {
             "VIP Temizlik Servisi",
             "Mini Buzdolabı",
             "Sıcak Su",
-            "Doğalgaz Kombi"
+            "Doğalgaz Kombi",
+            "Netflix",
+            "Youtube",
+            "Android TV",
+            "Asansör",
+            "Deniz Manzarası"
         ],
         images: [
             "images/room5.jpg",
@@ -40,7 +45,12 @@ const roomDetails = {
             "VIP Temizlik Servisi",
             "Mini Buzdolabı",
             "Sıcak Su",
-            "Doğalgaz Kombi"
+            "Doğalgaz Kombi",
+            "Netflix",
+            "Youtube",
+            "Android TV",
+            "Asansör",
+            "Deniz Manzarası"
         ],
         images: [
             "images/room9.jpg",
@@ -62,7 +72,12 @@ const roomDetails = {
             "VIP Temizlik Servisi",
             "Mini Buzdolabı",
             "Sıcak Su",
-            "Doğalgaz Kombi"
+            "Doğalgaz Kombi",
+            "Netflix",
+            "Youtube",
+            "Android TV",
+            "Asansör",
+            "Deniz Manzarası"
         ],
         images: [
             "images/room10.jpg",
